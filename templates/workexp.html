@@ -1,0 +1,75 @@
+<script type="text/javascript">
+  $(".goog").hide();
+  $(".pint").hide();
+  $(".matt").hide();
+  $(".goog").fadeIn(300);
+    var curr_wrk = "goog";
+    $("#wrk label").click(function(){
+        var $input = $(this).find('input');
+        var radioValue = $input.attr('id');
+        console.log(radioValue);
+        $("." + curr_wrk).fadeOut(300);
+        $("." + radioValue).fadeIn(300);
+        curr_wrk = radioValue;
+    });
+</script>
+
+<!-- <div class="research row" style="position: absolute; padding-top: 30px;"> -->
+  <div class="col-sm-3" style="width:1520px; margin-left:20px">
+    <div class="btn-toolbar btn-group-vertical flex-wrap btn-group-toggle" id="wrk" style="display: flex; justify-content: center;" data-toggle="buttons">
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width active">
+        <input type="radio" name="options" id="goog" autocomplete="off" checked> Google, Geo Insights Team
+      </label>
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width">
+        <input type="radio" name="options" id="pint" autocomplete="off"> Pinterest, Visual Search Team
+      </label>
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width">
+        <input type="radio" name="options" id="matt" autocomplete="off"> Matterport, Computer Vision Software
+      </label>
+    </div>
+  </div>
+
+  <div class="col-sm-5" style="height:550px; overflow-y: scroll;">
+    <div class="goog">
+      <p><b style="color:#17a2b8">Google, Geo Insights Team</b>
+          <br>Software Engineering Intern, Summer 2019</p>
+      <p>Designed and built pipeline to perform weakly supervised segmentation on aerial imagery,
+        including training model and evaluating predictions. Developed novel method that
+        soft-labels masks by synthesizing data augmentations. Demonstrated significant
+        improvement in model performance and generalizability of method to predict
+        on new, unseen classes.</p>
+      <p>
+        Skills: <em>Tensorflow, Apache Beam, OpenCV, Python imaging libraries, machine learning at scale</em>
+      </p>
+      <img src="photos/google.jpg" width="350px" style="margin-bottom:10px">
+      <p>Big thanks to the Geo Insights team and my hosts, Kazi and Josephine, for their mentorship and compassion.</p>
+    </div>
+    <div class="pint">
+      <p><b style="color:#17a2b8">Pinterest, Visual Search Team</b>
+          <br>Software Engineering Intern, Summer 2018</p>
+      <p>
+         Implemented data distillation to automatically augment training
+         datasets from billions of unlabeled, user-generated imagery at little to no cost.
+         Expanded dataset size by 200% and showed newly trained model performs better than
+         current production model across all metrics.</p>
+      <p>
+        Skills: <em>Tensorflow, Hadoop/SQL, Pandas, Python imaging libraries, machine learning at scale</em>
+      </p>
+      <img src="photos/pinterest.jpg" width="350px" style="margin-bottom:10px">
+      <p>I was also very lucky to be selected as a Kleiner-Perkins Engineering Fellow!</p>
+    </div>
+    <div class="matt">
+      <p><b style="color:#17a2b8">Matterport</b>
+          <br>Computer Vision Software Intern, Summer 2017</p>
+      <p>Developed algorithm that creates 3D point cloud models from real-time scanning
+        that is robust to color balance and lighting changes within a single scene.
+        Thrived in fast-paced environment on Matterport’s Mobile Capture team and
+        presented work to entire company and executives.</p>
+      <p>
+        Skills: <em>C++, OpenGL, OpenCV, Android</em>
+      </p>
+      <img src="photos/matterport.png" width="500px">
+      <p>Check out the product <a href="https://matterport.com/platform/applications">here</a>.</p>
+    </div>
+  </div>
+<!-- </div> -->

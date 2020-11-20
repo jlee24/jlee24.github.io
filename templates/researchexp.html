@@ -1,0 +1,141 @@
+<script type="text/javascript">
+  $(".qbot").hide();
+  $(".bricks").hide();
+  $(".hci").hide();
+  // $(".archives").hide();
+  $(".bricks").fadeIn(300);
+    var curr_rsrch = "bricks";
+    $("#rsrch label").click(function(){
+        var $input = $(this).find('input');
+        var radioValue =$input.attr('id');
+        console.log(radioValue);
+        $("." + curr_rsrch).fadeOut(300);
+        $("." + radioValue).fadeIn(300);
+        curr_rsrch = radioValue;
+    });
+</script>
+
+<!-- <div class="research row" style="position: absolute; padding-top: 30px;"> -->
+  <div class="col-sm-3" style="width:1520px; margin-left:20px">
+    <div class="btn-toolbar btn-group-vertical flex-wrap btn-group-toggle" id="rsrch" style="display: flex; justify-content: center;" data-toggle="buttons">
+
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width active">
+        <input type="radio" name="options" id="bricks" autocomplete="off" checked> Sustain Lab - Visual Search
+      </label>
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width">
+        <input type="radio" name="options" id="qbot" autocomplete="off"> Stanford Vision & Learning Lab - Ever-Learning
+      </label>
+      <label class="btn input-block-level btn-outline-info sidebar responsive-width">
+        <input type="radio" name="options" id="hci" autocomplete="off"> Stanford HCI Lab - Dynamic Visualizations
+      </label>
+      <!-- <label class="btn input-block-level btn-outline-info sidebar responsive-width">
+        <input type="radio" name="options" id="archives" autocomplete="off"> Stanford HCI Lab - Dynamic Archives
+      </label> -->
+    </div>
+  </div>
+
+  <div class="col-sm-5" style="height:550px; overflow-y: scroll;">
+    <div class="bricks">
+      <p>Stanford Sustain Lab, Woods Institute for the Environment, Stanford School of Medicine
+        <br>
+        <em>Advised by Professor Stefano Ermon, Professor David Lobell, Professor Marshall Burke, Professor Steve Luby</em> | <em>mentored by Nina Brooks</em>
+        <br>
+      </p>
+      <p>
+        <b style="color:#17a2b8">Project</b>
+        <br>
+        Our goal is to create an intelligent system that can detect sparse objects
+        in contiguous imagery (e.g. satellite, medical) even with limited training data.
+        We developed a weakly supervised visual search pipeline that learns how to perform
+        detection from classification labels and uses data augmentation + human-in-the-loop
+        data distillation to iteratively improve itself.
+      </p>
+
+      <p>
+        <b style="color:#17a2b8">Honors</b>
+        <br>
+        Firestone Medal for Excellence in Undergraduate Research (honors top 10% of honors theses across all disciplines; only 1 in CS Department)
+      </p>
+
+      <p>
+        <b style="color:#17a2b8">Application</b>
+        <br>
+        Brick kilns are large ovens that cook molded clay into bricks, which are
+        widely used for construction. They're prevalent throughout South Asia and consume large amounts of
+        wood and coal, releasing pollutants into the air and deteroriating the health of nearby cropland and people.
+        <br>
+        <img src="photos/brickkiln.jpg" width="220px" style="margin-top: 10px; margin-bottom:10px; margin-right:10px">
+        <img src="photos/satellite.png" width="300px" style="margin-top: 10px; margin-bottom:10px">
+        <br>
+        <b>Problem:</b> There's no database to know where all the kilns are and whether they are following
+        government regulations, e.g. type of kiln, distance from facilities like schools and hospitals.
+        Unfortunately, it would be infeasible to find all kilns manually on the ground.
+        <br>
+        <b>Solution:</b> What if we could locate the brick kilns from above, using satellite imagery?
+        We applied the geovisual search pipeline to find brick kilns in Bangladesh. Paper will be linked soon.
+      </p>
+      <img src="photos/pipeline.png" width="600px" style="margin-bottom:10px">
+    </div>
+    <div class="qbot">
+      <p>Stanford Vision & Learning Lab
+        <br>
+        <em>Advised by Professor Fei-Fei Li, Professor Michael Bernstein</em> | <em>mentored by Ranjay Krishna</em>
+        <br>
+      </p>
+
+      <p>
+        <b style="color:#17a2b8">Project</b>
+        <br>
+        Data annotation by people is tedious and expensive. We investigated an
+        ever-learning approach in which an intelligent agent automatically collects
+        data to improve its own perfromance. We wanted to overcome challenges
+        of past systems that learn from existing information, e.g. from the internet,
+        but are limited because people do not explicitly define already known concepts.
+        <br> We built an active learning system that generates questions about
+        images on social media and asks them to users. The collected responses are initially
+        too unreliable and noisy to be used in training directly. We created a sequential
+        attention-based model that, with a joint prior based on the visual content of the image and
+        text of the question, points to the answer.
+      </p>
+
+      <img src="photos/231n.png" width="450px">
+      <p>Gave spotlight talk in the spring 2017 iteration of CS 231N: Convolutional Neural Networks for Visual Recognition.</p>
+      <p>Presented work at Stanford Human-Centered AI Symposium in Spring 2019.</p>
+    </div>
+
+    <div class="hci">
+      <p>Stanford Human-Computer Interaction Lab
+        <br>
+        <em>Advised by Professor Maneesh Agrawala</em> | <em>mentored by Mitchell Gordon, Juho Kim</em>
+        <br>
+      </p>
+
+      <p>
+        We developed a system that takes large amounts of unstructured visual and
+        language data as input and uncovers insights for creative experts,
+        like journalists and podcast producers. Because our users were experts,
+        AI was most useful in helping them go beyond getting an understanding
+        and instead finding connections.
+      </p>
+
+      <p>
+        <b style="color:#17a2b8">Project 1</b>
+        <br>
+        30th Annual ACM Symposium on User Interface Software and Technology (UIST '17)
+        <br>
+        <a href="https://dl.acm.org/citation.cfm?doid=3131785.3131818">See the publication</a>
+        <img src="photos/podcast.png" width="600px">
+      </p>
+
+      <p>
+        <b style="color:#17a2b8">Project 2</b>
+        <br>
+        We created an interactive archive to learn about the history of Douglas Engelbart’s
+        life and work, true to his vision of interactive technology by enabling navigation by multiple dimensions.
+        <br>
+        <img src="photos/archives.png" width="600px" style="margin-top:10px; margin-bottom:10px;">
+      </p>
+    </div>
+
+  </div>
+<!-- </div> -->
