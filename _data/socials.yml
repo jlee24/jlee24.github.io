@@ -1,0 +1,9 @@
+# Social media links and contact information
+# The socials will be displayed in the order they are defined here
+
+cv_pdf: example_pdf.pdf # link to the dummy CV PDF, user can replace the file
+email: jihyeon@cs.stanford.edu
+github_username: jlee24
+# linkedin_username: # user can add this later
+# scholar_userid: # user can add Google Scholar ID here
+# rss_icon: true

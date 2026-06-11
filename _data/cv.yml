@@ -1,0 +1,94 @@
+cv:
+  name: Jihyeon Lee
+  label: Researcher / Software Engineer
+  email: jihyeon@cs.stanford.edu
+  location: California, US
+  image: thumbnail1.jpg
+  summary: Researcher at Google Research, Stanford CS Alum. Building AI for social good and robust decision-making.
+
+  social_networks:
+    - network: GitHub
+      username: jlee24
+
+  sections:
+    Education:
+      - institution: Stanford University
+        location: Stanford, CA
+        studyType: M.S.
+        area: Computer Science (AI & HCI Specializations)
+        start_date: 2019
+        end_date: 2020
+        highlights:
+          - Siebel Scholar (full merit-based scholarship)
+          - Advisers: Maneesh Agrawala and Stefano Ermon
+      - institution: Stanford University
+        location: Stanford, CA
+        studyType: B.S. with Honors
+        area: Computer Science (AI Specialization), Minor in Feminist, Gender, & Sexuality Studies
+        start_date: 2015
+        end_date: 2019
+        highlights:
+          - Firestone Medal for Excellence in Undergraduate Research (top 10% of theses)
+
+    Experience:
+      - company: Google Research
+        position: Software Engineer
+        location: Mountain View, CA
+        start_date: 2020
+        end_date: Present
+        summary: Building SKAI, an AI system for detecting damage after natural disasters for humanitarian organizations.
+        highlights:
+          - Collaborating with United Nations World Food Programme and GiveDirectly.
+      - company: Google, Geo Insights Team
+        position: Software Engineering Intern
+        location: Mountain View, CA
+        start_date: 2019-06
+        end_date: 2019-09
+        summary: Designed and built pipeline to perform weakly supervised segmentation on aerial imagery, including training model and evaluating predictions. Developed novel method that soft-labels masks by synthesizing data augmentations.
+        highlights:
+          - TensorFlow, Apache Beam, OpenCV, Python imaging libraries, machine learning at scale
+      - company: Stanford Sustain Lab
+        position: Researcher
+        location: Stanford, CA
+        start_date: 2018
+        end_date: 2019
+        summary: Developed a weakly supervised geovisual search pipeline that learns how to perform detection from classification labels and uses data augmentation + human-in-the-loop data distillation. Applied to locate brick kilns in Bangladesh to monitor environmental regulations.
+        highlights:
+          - Advised by Stefano Ermon, David Lobell, Marshall Burke, Steve Luby | Mentored by Nina Brooks
+          - Received Firestone Medal (only 1 in CS Department)
+      - company: Pinterest, Visual Search Team
+        position: Software Engineering Intern
+        location: San Francisco, CA
+        start_date: 2018-06
+        end_date: 2018-09
+        summary: Implemented data distillation to automatically augment training datasets from billions of unlabeled, user-generated imagery at little to no cost. Expanded dataset size by 200% and showed newly trained model performs better.
+        highlights:
+          - Kleiner-Perkins Engineering Fellow
+          - TensorFlow, Hadoop/SQL, Pandas, Python imaging libraries
+      - company: Stanford Vision & Learning Lab
+        position: Researcher
+        location: Stanford, CA
+        start_date: 2017
+        end_date: 2019
+        summary: Investigated an active learning system that generates questions about images on social media and asks them to users to automatically collect data. Created a sequential attention-based model to handle noisy responses.
+        highlights:
+          - Advised by Fei-Fei Li, Michael Bernstein | Mentored by Ranjay Krishna
+          - Gave spotlight talk at CS 231N (Spring 2017)
+          - Presented at Stanford Human-Centered AI Symposium (Spring 2019)
+      - company: Matterport
+        position: Computer Vision Software Intern
+        location: Sunnyvale, CA
+        start_date: 2017-06
+        end_date: 2017-09
+        summary: Developed algorithm that creates 3D point cloud models from real-time scanning that is robust to color balance and lighting changes within a single scene.
+        highlights:
+          - C++, OpenGL, OpenCV, Android
+      - company: Stanford HCI Lab
+        position: Researcher
+        location: Stanford, CA
+        start_date: 2016
+        end_date: 2017
+        summary: Developed a system that uncovers insights for creative experts (journalists, podcasters) from large amounts of unstructured visual and language data. Created an interactive archive for Douglas Engelbart's work.
+        highlights:
+          - Advised by Maneesh Agrawala | Mentored by Mitchell Gordon, Juho Kim
+          - Publication: UIST '17 (30th Annual ACM Symposium on User Interface Software and Technology)
