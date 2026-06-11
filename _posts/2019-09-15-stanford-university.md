@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stanford University"
+title: "Back to Stanford for MS"
 date: 2019-09-15
 inline: false
 related_posts: false

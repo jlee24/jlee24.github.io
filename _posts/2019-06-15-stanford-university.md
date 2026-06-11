@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stanford University"
+title: "Stanford Graduation"
 date: 2019-06-15
 inline: false
 related_posts: false
